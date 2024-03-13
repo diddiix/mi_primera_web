@@ -1,0 +1,221 @@
+
+
+body{ 
+    background-color: cornsilk;
+} 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+  /* ENCABEZADO */
+  
+  header {
+    width: 100%;
+    background-color: burlywood;
+    margin: 0;
+    position: fixed;
+    top: 0;
+  }
+  
+  .titulo {
+    display:inline-block;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    color: white;
+  }
+
+  header nav {
+    height: 80px;
+    float: right;
+  }
+  
+  nav ul.menu {
+    float: right;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+  }
+  
+  nav ul.menu li a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+}
+
+
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.acerca-de {
+    text-align: right;
+    width: 400px;
+}
+h1 {
+    color: white;
+    padding: 10px;   
+}
+h2 {
+    color: brown;
+}
+.parrafo1 {
+    color: coral;
+}
+.acerca-imagen {
+    padding: 30px;
+}
+.imagen6 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+.seccion-2 {
+    margin-top: 50px;
+}
+.columna1 {
+    display: flex;
+    flex: none;
+    gap: 300px;
+    margin: 150px;
+    text-align: center;
+    
+}
+
+.columna2 {
+    display: flex;
+    flex: none;
+    gap: 300px;
+    margin: 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    background-color: ghostwhite;
+}
+footer nav ul li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: palevioletred;
+}
+h3 {
+    color: dimgray;
+    text-align: center;
+    font-size: 25px;
+}
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.form-header {
+    text-align: center;
+    background-color: #ffffff;
+    border: 5px solid pink;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+.form-row {
+    color: black;
+    padding: 5px;
+}
+.footertext {
+    color: pink;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        background-color: pink;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: indianred;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+    .columna1 {
+        flex-direction: column;
+        gap: 49px;
+        margin: 55px;
+    }
+    .columna2 {
+        flex-direction: column;
+        gap: 49px;
+        margin: 55px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    
+    nav {
+        width: 100px;
+
+    }
+
+}
